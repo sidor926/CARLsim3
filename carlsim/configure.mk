@@ -113,7 +113,7 @@ NVCC_MAJOR_NUM     := $(shell nvcc -V 2>/dev/null | grep -o 'release [0-9]\.' | 
 NVCCFL          += -D__CUDA$(NVCC_MAJOR_NUM)__
 
 # CUDA code generation flags
-GENCODE_SM20       := -gencode arch=compute_20,code=sm_20
+#GENCODE_SM20       := -gencode arch=compute_20,code=sm_20
 GENCODE_SM30       := -gencode arch=compute_30,code=sm_30 -gencode arch=compute_35,code=\"sm_35,compute_35\"
 
 # cuda 9 doesn't support compute20
